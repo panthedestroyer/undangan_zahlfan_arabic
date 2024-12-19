@@ -331,3 +331,30 @@ table th {
     background-color: #4e0a7e;
 }
 
+/* CSS untuk Tamu Khusus Responsif */
+#tamu-khusus {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Tambahkan agar tabel dapat scroll horizontal */
+}
+
+.table {
+    width: 100%; /* Atur lebar tabel penuh pada perangkat mobile */
+}
+
+.table th, .table td {
+    white-space: nowrap; /* Hindari penggabungan kolom yang terputus */
+    word-break: break-all; /* Pecahkan kata jika terlalu panjang */
+}
+
+@media (max-width: 768px) { /* Sesuaikan untuk perangkat dengan lebar layar maksimal 768px (smartphone) */
+    .table th, .table td {
+        display: block; /* Atur kolom menjadi vertikal */
+        width: 100%; /* Atur lebar penuh pada layar kecil */
+    }
+}
+
+
